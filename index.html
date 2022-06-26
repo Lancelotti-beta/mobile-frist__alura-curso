@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>AluraBooks</title>
-        <link rel="shortcut icon" href="assets/icon/Logo.svg" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Import dos Arquivos CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>AluraBooks</h1>
-        </header>
-        <main>
+    <title>AluraBooks</title>
+    <link rel="shortcut icon" href="assets/icon/Logo.svg" type="image/x-icon">
 
-        </main>
-        <footer>
+    <!-- Import da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        </footer>
-        
-    </body>
+    <!-- Import dos Arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container__flex">
+            <input type="checkbox" id="menu" class="cabecalho__checkbox">
+            <label for="menu">
+                <span class="cabecalho__menu cabecalho__img"></span>
+            </label>
+            <ul class="cabecalho__menu-lista">
+                <li class="menu__lista menu__lista--alternativo">
+                    categorias
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">programação</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">front-end</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">infraestrutura</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">business</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">design & ux</a>
+                </li>
+            </ul>
+            <img src="assets/icon/Logo.svg" alt="Logo da AluraBooks" class="cabecalho__img">
+        </div>
+        <div class="container__flex">
+            <a href="#" class="cabecalho__link">
+                <img src="assets/icon/Favoritos.svg" alt="Meus Favoritos" class="cabecalho__img">
+            </a>
+            <a href="#" class="cabecalho__link">
+                <img src="assets/icon/Compras.svg" alt="Sacola de Compras" class="cabecalho__img">
+            </a>
+            <a href="#" class="cabecalho__link">
+                <img src="assets/icon/Usuário.svg" alt="Meu Perfil" class="cabecalho__img">
+            </a>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
 </html>

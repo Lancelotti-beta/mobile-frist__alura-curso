@@ -1,3 +1,13 @@
 :root {
     --cor-fundo: #ebecee;
+    --branco-principal: #ffffff;
+    --laranja-titulo: #eb9b00;
+    --azul-sub-titulo: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    
+    --poppins: 'Poppins', sans-serif;
+
+    --peso-extra-baixo: 300;
+    --peso-baixo: 400;
+    --peso-medio: 500;
+    --peso-alto: 700;
 }

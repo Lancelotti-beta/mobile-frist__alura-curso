@@ -1,0 +1,58 @@
+.cabecalho{
+    background-color: var(--branco-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* ===== Menu Categorias ===== */
+.cabecalho__menu-lista {
+    background-color: var(--branco-principal);
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.menu__lista {
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.menu__lista--alternativo {
+    color: var(--laranja-titulo);
+    font-weight: var(--peso-alto);
+}
+
+.menu__lista--link {
+    background: var(--azul-sub-titulo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+/* ===== Imagem Hamburguer do Menu ===== */
+.cabecalho__checkbox:checked ~ .cabecalho__menu-lista{
+    display: block;
+}
+
+.cabecalho__checkbox {
+    display: none;
+}
+
+.cabecalho__menu {
+    background-image: url('../../icon/Menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* ===== Imagens do Cabeçalho ===== */
+.cabecalho__img {
+    padding: 1rem;
+}
