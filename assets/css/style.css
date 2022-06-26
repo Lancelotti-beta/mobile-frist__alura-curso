@@ -1,7 +1,9 @@
 @import url(./reset/_reset.css);
 @import url(./base/_variaveis.css);
+
 /* Componentes */
 @import url(./components/cabecalho.css);
+@import url(./components/banner.css);
 
 body {
     background-color: var(--cor-fundo);
