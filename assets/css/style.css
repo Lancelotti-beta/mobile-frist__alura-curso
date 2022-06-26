@@ -1,3 +1,6 @@
 @import url(./reset/_reset.css);
 @import url(./base/_variaveis.css);
 
+body {
+    background-color: var(--cor-fundo);
+}
