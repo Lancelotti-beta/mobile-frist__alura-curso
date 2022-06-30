@@ -1,0 +1,25 @@
+.card {
+    align-items: center;
+    background: var(--branco-principal);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Titulo e Descrição */
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botões e icones */
+.card__botao {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao__lista {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}

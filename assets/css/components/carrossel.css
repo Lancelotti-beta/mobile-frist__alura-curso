@@ -3,9 +3,10 @@
     color: var(--laranja-titulo);
     font-size: 1.125rem;
     font-weight: var(--peso-alto);
+    line-height: 27px;
+    padding: 1rem 0 .5rem 0;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0 .5rem 0;
 }
 
 .swiper-pagination {

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AluraBooks</title>
-    <link rel="shortcut icon" href="assets/icon/Logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon-svg/Logo.svg" type="image/x-icon">
 
     <!-- Import da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,17 +48,17 @@
                     <a href="#" class="menu__lista--link">design & ux</a>
                 </li>
             </ul>
-            <img src="assets/icon/Logo.svg" alt="Logo da AluraBooks" class="cabecalho__img">
+            <img src="assets/icon-svg/Logo.svg" alt="Logo da AluraBooks" class="cabecalho__img">
         </div>
         <div class="container__flex">
             <a href="#" class="cabecalho__link">
-                <img src="assets/icon/Favoritos.svg" alt="Meus Favoritos" class="cabecalho__img">
+                <img src="assets/icon-svg/Favoritos.svg" alt="Meus Favoritos" class="cabecalho__img">
             </a>
             <a href="#" class="cabecalho__link">
-                <img src="assets/icon/Compras.svg" alt="Sacola de Compras" class="cabecalho__img">
+                <img src="assets/icon-svg/Compras.svg" alt="Sacola de Compras" class="cabecalho__img">
             </a>
             <a href="#" class="cabecalho__link">
-                <img src="assets/icon/Usuário.svg" alt="Meu Perfil" class="cabecalho__img">
+                <img src="assets/icon-svg/Usuário.svg" alt="Meu Perfil" class="cabecalho__img">
             </a>
         </div>
     </header>
@@ -72,7 +72,7 @@
         <section class="carrossel">
             <h2 class="carrossel__titulo">Novos Lançamentos</h2>
             <!-- Slider main container -->
-            <div class="swiper">
+            <article class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
@@ -80,24 +80,24 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                        <img src="./assets/icon-svg/Angularbook-2.svg" alt="Capa digital do livro Angular">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/Guia Front-end.png" alt="Capa digital do livro Guia para Front-end">
+                        <img src="./assets/icon-svg/Guia Front-endbook-8.svg" alt="Capa digital do livro Guia para Front-end">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                        <img src="./assets/icon-svg/Javascriptbook-9.svg" alt="Capa digital do livro JavaScript Assertivo">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/Liderança.png"
+                        <img src="./assets/icon-svg/Liderançabook-0.svg"
                             alt="Capa digital do livro Liderança em Desing, desenvolvendo habilidades em gestão">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/Portugol.png"
+                        <img src="./assets/icon-svg/book-Portugol.svg"
                             alt="Capa digital do livro lógica de Programação com Portugol">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                        <img src="./assets/icon-svg/Acessibilidadebook-1.svg" alt="Capa digital do livro Acessibilidade web">
                     </div>
                 </div>
 
@@ -105,7 +105,25 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
-            </div>
+            </article>
+
+            <article class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse. . .</h3>
+                        <h2 class="descricao__titulo--livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__paragrafo">Construindo uma aplicação integrada com a plataforma do Google</p>
+                    </div>
+                    <img src="./assets/img/Angular.png" alt="" class="descricao__img">
+                </div>
+                <div class="card__botao">
+                    <ul class="botao__lista">
+                        <li class="botao__item"><img src="./assets/icon-svg/Favoritos.svg" alt="adicionar ao seus favoritos" class="botao__item--icone"></li>
+                        <li class="botao__item"><img src="./assets/icon-svg/Compras.svg" alt="adiconar ao carrinho de compras" class="botao__item--icone"></li>
+                    </ul>
+                    <a href="#" class="botao__link">Saiba mais</a>
+                </div>
+            </article>
         </section>
 
     </main>

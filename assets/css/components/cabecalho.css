@@ -44,7 +44,7 @@
 }
 
 .cabecalho__menu {
-    background-image: url('../../icon/Menu.svg');
+    background-image: url('../../icon-svg/Menu.svg');
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
