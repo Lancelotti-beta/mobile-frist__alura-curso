@@ -73,25 +73,38 @@
             <h2 class="carrossel__titulo">Novos Lançamentos</h2>
             <!-- Slider main container -->
             <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo"></div>
-                    <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Capa digital do livro Guia para Front-end"></div>
-                    <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo"></div>
-                    <div class="swiper-slide"><img src="./assets/img/Liderança.png" alt="Capa digital do livro Liderança em Desing, desenvolvendo habilidades em gestão"></div>
-                    <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Capa digital do livro lógica de Programação com Portugol"></div>
-                    <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo"></div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Guia Front-end.png" alt="Capa digital do livro Guia para Front-end">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Liderança.png"
+                            alt="Capa digital do livro Liderança em Desing, desenvolvendo habilidades em gestão">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Portugol.png"
+                            alt="Capa digital do livro lógica de Programação com Portugol">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Javascript.png" alt="Capa digital do livro JavaScript Assertivo">
+                    </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
         </section>
 
@@ -101,7 +114,16 @@
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidePerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets'
+            }
+        });
+    </script>
 </body>
 
 </html>
