@@ -4,6 +4,7 @@
 /* Componentes */
 @import url(./components/cabecalho.css);
 @import url(./components/banner.css);
+@import url(./components/carrossel.css);
 
 body {
     background-color: var(--cor-fundo);
