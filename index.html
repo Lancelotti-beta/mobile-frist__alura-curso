@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Import do SwiperJS Carrossel -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -49,10 +50,36 @@
                 </li>
             </ul>
             <img src="assets/icon-svg/Logo.svg" alt="Logo da AluraBooks" class="cabecalho__img">
+            <h1 class="cabecalho__titulo"><b class="cabecalho__titulo--negrito">Alura</b>Books</h1>
         </div>
+        <ul class="cabecalho__opcoes">
+            <input type="checkbox" id="menu-secundario" class="cabecalho__checkbox ">
+            <label for="menu-secundario">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="cabecalho__menu-lista">
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">programação</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">front-end</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">infraestrutura</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">business</a>
+                </li>
+                <li class="menu__lista">
+                    <a href="#" class="menu__lista--link">design & ux</a>
+                </li>
+            </ul>
+            <li class="opcoes__item"><a href="#" class="opcoes__item--link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__item--link">Minha estante</a></li>
+        </ul>
         <div class="container__flex">
             <a href="#" class="cabecalho__link">
-                <img src="assets/icon-svg/Favoritos.svg" alt="Meus Favoritos" class="cabecalho__img">
+                <img src="assets/icon-svg/Favoritos.svg" alt="Meus Favoritos" class="cabecalho__img cabecalho__img--escondido">
             </a>
             <a href="#" class="cabecalho__link">
                 <img src="assets/icon-svg/Compras.svg" alt="Sacola de Compras" class="cabecalho__img">
