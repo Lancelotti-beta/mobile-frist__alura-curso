@@ -23,6 +23,8 @@
 .menu__lista--alternativo {
     color: var(--laranja-titulo);
     font-weight: var(--peso-alto);
+
+    transition: all .3s;
 }
 
 .menu__lista--link {
@@ -114,8 +116,11 @@
 
     .cabecalho__checkbox:checked ~ .cabecalho__menu-lista{
         display: block;
-        width: 45vw;
+        width: 20vw;
     }
 
+    .menu__lista:hover {
+        background: var(--cor-fundo);
+    }
 
 }
