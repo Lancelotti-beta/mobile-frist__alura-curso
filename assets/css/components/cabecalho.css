@@ -56,3 +56,7 @@
 .cabecalho__img {
     padding: .5rem;
 }
+
+@media screen and (min-width: 1024px) {
+    
+}
