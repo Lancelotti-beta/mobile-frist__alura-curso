@@ -6,6 +6,7 @@
 @import url(./components/carrossel.css);
 @import url(./components/card.css);
 @import url(./components/topico.css);
+@import url(./components/contato.css);
 
 body {
     background-color: var(--cor-fundo);
@@ -17,4 +18,9 @@ body {
 .container__flex {
     display: flex;
     align-items: center;
+}
+
+.rodape {
+    background-color: var(--branco-principal);
+    padding: 1rem;
 }
