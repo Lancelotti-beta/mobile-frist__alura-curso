@@ -1,0 +1,8 @@
+.rodape {
+    background-color: var(--branco-principal);
+    padding: 1rem;
+}
+
+.rodape__titulo {
+    line-height: 24px;
+}

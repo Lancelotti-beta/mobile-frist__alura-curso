@@ -7,6 +7,7 @@
 @import url(./components/card.css);
 @import url(./components/topico.css);
 @import url(./components/contato.css);
+@import url(./components/rodape.css);
 
 body {
     background-color: var(--cor-fundo);
@@ -20,7 +21,4 @@ body {
     align-items: center;
 }
 
-.rodape {
-    background-color: var(--branco-principal);
-    padding: 1rem;
-}
+
