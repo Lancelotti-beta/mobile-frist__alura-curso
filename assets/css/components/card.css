@@ -1,25 +1,49 @@
-.card {
-    align-items: center;
+.card{
     background: var(--branco-principal);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     margin: 1rem;
     padding: 1rem;
 }
 
 /* Titulo e Descrição */
-.card__descricao {
+.card__descricao{
     display: flex;
     justify-content: space-between;
+    margin: 0 .5rem;
+}
+
+.descricao__titulo{
+    color: var(--laranja-titulo);
+    font-weight: var(--peso-alto);
+}
+
+.descricao__titulo--livro{
+    color: var(--azul-secundario);
+    font-size: 1.125rem;
+    font-weight: var(--peso-alto);
+    margin: .5rem 0;
+}
+
+.descricao__paragrafo{
+    font-size: .875rem;
 }
 
 /* Botões e icones */
-.card__botao {
-    align-items: center;
+.card__botao{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.botao__lista {
-    align-items: center;
+.botao__lista{
     display: flex;
+    align-items: center;
     justify-content: space-around;
+}
+
+.botao__link{
+    background: var(--laranja-titulo);
+    text-align: center;
+    padding: 1rem;
 }
