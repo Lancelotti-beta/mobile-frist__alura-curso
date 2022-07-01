@@ -1,5 +1,10 @@
 @import url(./reset/_reset.css);
 @import url(./base/_variaveis.css);
+/* Sessões da Pagina - Import's */
+@import url(./components/cabecalho.css);
+@import url(./components/banner.css);
+@import url(./components/carrossel.css);
+@import url(./components/card.css);
 
 body {
     background-color: var(--cor-fundo);

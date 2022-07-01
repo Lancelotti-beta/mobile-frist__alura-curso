@@ -19,10 +19,6 @@
 
     <!-- Import dos Arquivos CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/components/cabecalho.css">
-    <link rel="stylesheet" href="./assets/css/components/banner.css">
-    <link rel="stylesheet" href="./assets/css/components/carrossel.css">
-    <link rel="stylesheet" href="./assets/css/components/card.css">
 </head>
 
 <body>
@@ -73,10 +69,11 @@
             <input type="search" class="banner__pesquisa banner__pesquisa--lupa"
                 placeholder="Qual será sua próxima leitura?">
         </section>
+
         <section class="carrossel">
             <h2 class="carrossel__titulo">Novos Lançamentos</h2>
             <!-- Slider main container -->
-            <div class="swiper">
+            <article class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
@@ -101,7 +98,7 @@
                             alt="Capa digital do livro lógica de Programação com Portugol">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/icon-svg/Acessibilidadebook-1.svg" alt="Capa digital do livro Acessibilidade web">
+                        <img src="./assets/icon-svg/Acessibilidadebook-1.svg" alt="Capa digital do livro Acessibilidade web, boas praticas para aplicações acessíveis">
                     </div>
                 </div>
 
@@ -109,16 +106,16 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
-            </div>
+            </article>
 
             <article class="card">
                 <div class="card__descricao">
                     <div class="descricao">
                         <h3 class="descricao__titulo">Talvez você também se interesse... </h3>
-                        <h2 class="descricao__titulo--livro">Angular 11 e Firebase</h2>
+                        <h2 class="descricao__titulo--alternativo">Angular 11 e Firebase</h2>
                         <p class="descricao__paragrafo">Construindo uma aplicação integrada com a plataforma do Google</p>
                     </div>
-                    <img src="./assets/img/Angular.png" alt="" class="descricao__img">
+                    <img src="./assets/img/Angular.png" alt="Logo do Angular" class="descricao__img">
                 </div>
                 <div class="card__botao">
                     <ul class="botao__lista">
@@ -130,6 +127,62 @@
             </article>
         </section>
 
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">mais vendidos</h2>
+            <!-- Slider main container -->
+            <article class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/ApacheKafkabook-3.svg" alt="livro Apache kafka, comunicação assíncrona entre microsserviços">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/Guia Front-endbook-8.svg" alt="Capa digital do livro Guia para Front-end">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/Javascriptbook-9.svg" alt="Capa digital do livro JavaScript Assertivo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/Liderançabook-0.svg"
+                            alt="Capa digital do livro Liderança em Desing, desenvolvendo habilidades em gestão">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/book-Nodejs.svg"
+                            alt="Capa digital do livro Node.Js, construindo APIs REST">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/icon-svg/book-ReactNative.svg" alt="Capa digital do livro de ReactNative, desenvolvimento de aplicativos mobile">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </article>
+
+            <article class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo descricao--estrela">Autora do Mês</h3>
+                        <h2 class="descricao__titulo--alternativo">Juliana Agarikov</h2>
+                        <p class="descricao__paragrafo">Analista de sistemas e escritora, Juliana é especialista em Fornt-End</p>
+                    </div>
+                    <img src="./assets/img/Perfil-escritora 1.png" alt="mulher em uma praça arborizada, sorrindo" class="descricao__img">
+                </div>
+                <div class="card__botao">
+                    <ul class="botao__lista">
+                        <li class="botao__item"><img src="./assets/icon-svg/Favoritos.svg" alt="adicionar ao seus favoritos" class="botao__item--icone"></li>
+                        <li class="botao__item"><img src="./assets/icon-svg/Compras.svg" alt="adiconar ao carrinho de compras" class="botao__item--icone"></li>
+                    </ul>
+                    <a href="#" class="botao__link">Saiba mais</a>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
 
@@ -138,8 +191,9 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            slidePerView: 3,
+            slidesPerView: 3,
             spaceBetween: 10,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets'
