@@ -87,7 +87,7 @@
     .cabecalho__titulo--negrito {
         display: inline-block;
         font-family: var(--josefin);
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: 30px;
     }
 

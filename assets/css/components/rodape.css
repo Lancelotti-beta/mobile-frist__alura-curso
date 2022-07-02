@@ -6,3 +6,25 @@
 .rodape__titulo {
     line-height: 24px;
 }
+
+.rodape__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .rodape__lista {
+        display: block;
+        border-left: 1px solid var(--cor-fundo);
+        height: 100%;
+    }
+
+    .lista__itens {
+        padding: 0 .5rem;
+    }
+}

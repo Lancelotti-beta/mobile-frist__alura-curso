@@ -18,7 +18,36 @@
     width: 100%;
 }
 
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.625rem;
+        line-height: 39px;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 65%;
+        text-align: center;
+    }
+
+    /* .circleSwiper {
+        background: var(--azul-secundario);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    } */
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
 }

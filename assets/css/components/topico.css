@@ -32,3 +32,14 @@
     line-height: 21px;
     padding: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .topico__titulo {
+        font-size: 1.5rem;
+    }
+
+    .lista__item--link {
+        font-size: 1.5rem;
+    }
+}
