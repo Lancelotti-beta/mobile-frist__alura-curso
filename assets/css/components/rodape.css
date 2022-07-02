@@ -14,7 +14,6 @@
 @media screen and (min-width: 1024px) {
     .rodape {
         display: flex;
-        align-items: flex-start;
         justify-content: space-evenly;
     }
 
@@ -25,6 +24,21 @@
     }
 
     .lista__itens {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: inherit;
+        line-height: 21px;
         padding: 0 .5rem;
     }
+
+    .lista__itens--titulo {
+        color: var(--cinza-principal);
+        text-transform: uppercase;
+    }
+
+    .lista__itens-link {
+        color: var(--cinza-secundario);
+    }
+
 }

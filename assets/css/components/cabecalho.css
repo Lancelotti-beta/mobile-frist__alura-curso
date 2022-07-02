@@ -106,21 +106,29 @@
 
     .opcoes__item {
         cursor: pointer;
-        padding: 0 1rem;
+        padding: 1rem;
         text-transform: uppercase;
     }
 
+    .opcoes__item:hover,
+    .menu__lista:hover {
+        background: var(--azul-secundario);
+        color: var(--branco-principal);
+    }
+
+    .opcoes__item:active {
+        background: var(--azul-secundario);
+        color: var(--branco-principal);
+    }
+
     .opcoes__item--link {
+        padding: 24px 24px 16px;
         text-decoration: none;
     }
 
     .cabecalho__checkbox:checked ~ .cabecalho__menu-lista{
         display: block;
-        width: 20vw;
-    }
-
-    .menu__lista:hover {
-        background: var(--cor-fundo);
+        width: auto;
     }
 
 }

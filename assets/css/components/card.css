@@ -1,4 +1,4 @@
-.card{
+.card {
     background: var(--branco-principal);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -7,7 +7,7 @@
 }
 
 /* Titulo e Descrição */
-.card__descricao{
+.card__descricao {
     display: flex;
     justify-content: space-between;
     margin: 0 .5rem 1rem 0;
@@ -31,14 +31,14 @@
     width: 100px;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     color: var(--laranja-titulo);
     font-size: inherit;
     font-weight: var(--peso-alto);
     line-height: 24px;
 }
 
-.descricao__titulo--alternativo{
+.descricao__titulo--alternativo {
     color: var(--azul);
     font-size: 1.125rem;
     font-weight: var(--peso-alto);
@@ -46,30 +46,33 @@
     margin: .5rem 0;
 }
 
-.descricao__paragrafo{
+.descricao__paragrafo {
     font-size: .875rem;
     line-height: 21px;
 }
 
-.descricao__img{
-    width: 100%;
+.descricao__img {
+    width: auto;
+    max-width: 161px;
+    height: auto;
+    max-height: 166px;
 }
 
 /* Botões e icones */
-.card__botao{
+.card__botao {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.botao__lista{
+.botao__lista {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .5rem;
 }
 
-.botao__link{
+.botao__link {
     background: var(--laranja-titulo);
     color: var(--branco-principal);
     font-size: inherit;
@@ -79,15 +82,12 @@
     text-decoration: none;
     margin-right: .5rem;
     padding: 1rem 2.2rem;
+    gap: 10px;
 }
 
 @media screen and (min-width: 1024px) {
     .card {
         margin: 2rem auto;
-        width: 50%;
-    }
-
-    .descricao__img{
         width: 50%;
     }
 
