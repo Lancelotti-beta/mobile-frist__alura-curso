@@ -110,15 +110,20 @@
         text-transform: uppercase;
     }
 
-    .opcoes__item:hover,
-    .menu__lista:hover {
+    .opcoes__item:hover {
         background: var(--azul-secundario);
         color: var(--branco-principal);
     }
 
-    .opcoes__item:active {
-        background: var(--azul-secundario);
-        color: var(--branco-principal);
+    .menu__lista:hover {
+        background-color: var(--azul-secundario);
+    }
+
+    .menu__lista--link:hover {
+        background: var(--branco-principal);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #fff;
+        background-clip: text;   
     }
 
     .opcoes__item--link {

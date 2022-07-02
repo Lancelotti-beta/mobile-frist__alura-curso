@@ -17,6 +17,10 @@
         justify-content: space-evenly;
     }
 
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
     .rodape__lista {
         display: block;
         border-left: 1px solid var(--cor-fundo);
@@ -30,6 +34,7 @@
         font-weight: inherit;
         line-height: 21px;
         padding: 0 .5rem;
+        margin: 1rem .5rem;
     }
 
     .lista__itens--titulo {
@@ -39,6 +44,7 @@
 
     .lista__itens-link {
         color: var(--cinza-secundario);
+        margin-left: .5rem;
     }
 
 }
