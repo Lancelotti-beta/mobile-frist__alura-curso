@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalho {
     background-color: var(--branco-principal);
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
 }
 
 /* ===== Imagem Hamburguer do Menu ===== */
-.cabecalho__checkbox:checked ~ .cabecalho__menu-lista{
+.cabecalho__checkbox:checked~.cabecalho__menu-lista {
     display: block;
 }
 
@@ -59,7 +59,7 @@
     padding: .5rem;
 }
 
-/* ===== Oculto - Apartir de 1024px Cabeçalho ===== */
+/* ===== Oculto - Apartir de 1024px & 1728px Cabeçalho ===== */
 .cabecalho__titulo {
     display: none;
 }
@@ -68,9 +68,13 @@
     display: none;
 }
 
+.cabecalho__texto {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
-    .cabecalho{
+    .cabecalho {
         justify-content: space-around;
     }
 
@@ -106,34 +110,49 @@
 
     .opcoes__item {
         cursor: pointer;
-        padding: 1rem;
+        padding: .625rem;
         text-transform: uppercase;
     }
 
-    .opcoes__item:hover {
+    .menu__lista {
+        padding:  1.5rem 1.5rem 1rem;
+        text-decoration: none;
+    }
+    
+    .opcoes__item:hover,
+    .menu__lista:hover {
         background: var(--azul-secundario);
         color: var(--branco-principal);
     }
 
-    .menu__lista:hover {
-        background-color: var(--azul-secundario);
+    .opcoes__item:active {
+        background: var(--azul-secundario);
+        color: var(--branco-principal);
     }
 
     .menu__lista--link:hover {
-        background: var(--branco-principal);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: #fff;
-        background-clip: text;   
     }
 
-    .opcoes__item--link {
-        padding: 24px 24px 16px;
-        text-decoration: none;
-    }
-
-    .cabecalho__checkbox:checked ~ .cabecalho__menu-lista{
+    .cabecalho__checkbox:checked~.cabecalho__menu-lista {
         display: block;
         width: auto;
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+
+    .cabecalho {
+        padding: 0 3rem;
+    }
+
+    .cabecalho__texto {
+        display: block;
+    }
+
+    .cabecalho__opcoes {
+        margin-left: 1.5rem;
+        margin-right: auto;
+    }
 }
