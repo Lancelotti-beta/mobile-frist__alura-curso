@@ -113,13 +113,13 @@
         text-decoration: none;
     }
     
-    .opcoes__item:hover,
-    .menu__lista:hover {
-        background: var(--azul-secundario);
-        color: var(--branco-principal);
+    .cabecalho__checkbox:checked~.cabecalho__menu-lista {
+        display: block;
+        width: auto;
     }
 
-    .opcoes__item:active {
+    .opcoes__item:hover,
+    .menu__lista:hover {
         background: var(--azul-secundario);
         color: var(--branco-principal);
     }
@@ -128,17 +128,17 @@
         -webkit-text-fill-color: #fff;
     }
 
-    .cabecalho__checkbox:checked~.cabecalho__menu-lista {
-        display: block;
-        width: auto;
-    }
-
 }
 
 @media screen and (min-width: 1728px) {
 
     .cabecalho {
         padding: 0 3rem;
+    }
+
+    .cabecalho__link {
+        display: flex;
+        align-items: center;
     }
 
     .cabecalho__texto {
