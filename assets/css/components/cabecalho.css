@@ -60,14 +60,8 @@
 }
 
 /* ===== Oculto - Apartir de 1024px & 1728px Cabeçalho ===== */
-.cabecalho__titulo {
-    display: none;
-}
-
-.cabecalho__opcoes {
-    display: none;
-}
-
+.cabecalho__titulo,
+.cabecalho__opcoes, 
 .cabecalho__texto {
     display: none;
 }

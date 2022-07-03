@@ -56,4 +56,8 @@
     .carrossel__container {
         display: flex;
     }
+
+    .swiper {
+        width: 35%;
+    }
 }

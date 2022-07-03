@@ -96,3 +96,10 @@
         padding-right: 5.5rem;
     } */
 }
+
+@media screen and (min-width: 1728px) {
+
+    .card {
+        width: 35%;
+    }
+}
