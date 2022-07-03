@@ -12,7 +12,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 65vw;
+    width: 55vw;
 }
 
 .menu__lista {
@@ -54,6 +54,18 @@
     width: 1.5rem;
 }
 
+.cabecalho__img--menu {
+    padding: 2rem 1rem;
+}
+
+.cabecalho__checkbox:checked~.menu--alternativo>.cabecalho__menu {
+    background-image: url('../../icon-svg/menu_hamburguer_withe.svg');
+}
+
+.cabecalho__checkbox:checked~.menu--alternativo {
+    background: var(--azul-secundario);
+}
+
 /* ===== Imagens do Cabeçalho ===== */
 .cabecalho__img {
     padding: .5rem;
@@ -61,7 +73,7 @@
 
 /* ===== Oculto - Apartir de 1024px & 1728px Cabeçalho ===== */
 .cabecalho__titulo,
-.cabecalho__opcoes, 
+.cabecalho__opcoes,
 .cabecalho__texto {
     display: none;
 }
@@ -104,30 +116,32 @@
 
     .opcoes__item {
         cursor: pointer;
-        padding: .625rem;
+        padding: 2rem 1rem;
         text-transform: uppercase;
     }
 
-    .menu__lista {
-        padding:  1.5rem 1.5rem 1rem;
-        text-decoration: none;
-    }
-    
-    .cabecalho__checkbox:checked~.cabecalho__menu-lista {
-        display: block;
+    .cabecalho__menu-lista {
         width: auto;
     }
 
-    .opcoes__item:hover,
-    .menu__lista:hover {
+    .menu__lista {
+        padding: 1.5rem 1.5rem 1rem;
+        text-decoration: none;
+    }
+
+    .cabecalho__checkbox:checked~.opcoes__menu--alternativo>.opcoes__item {
         background: var(--azul-secundario);
         color: var(--branco-principal);
     }
 
-    .menu__lista--link:hover {
-        -webkit-text-fill-color: #fff;
+    .menu__lista:hover {
+        background: var(--azul-secundario);
     }
 
+
+    .menu__lista:hover>.menu__lista--link {
+        -webkit-text-fill-color: var(--branco-principal);
+    }
 }
 
 @media screen and (min-width: 1728px) {
@@ -143,10 +157,13 @@
 
     .cabecalho__texto {
         display: block;
+        font-size: 1.25rem;
+        line-height: 30px;
     }
 
     .cabecalho__opcoes {
         margin-left: 1.5rem;
         margin-right: auto;
     }
+
 }

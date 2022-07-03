@@ -43,3 +43,14 @@
         font-size: 1.5rem;
     }
 }
+
+
+@media screen and (min-width: 1728px) {
+    .topico {
+        padding: 4rem 25vw;
+    }
+
+    .topico__lista {
+        padding: 2rem 10vw 0;
+    }
+}

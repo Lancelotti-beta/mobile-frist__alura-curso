@@ -23,7 +23,6 @@
 
     .rodape__lista {
         display: block;
-        border-left: 1px solid var(--cor-fundo);
         height: 100%;
     }
 
@@ -47,4 +46,15 @@
         margin-left: .5rem;
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+
+    .rodape {
+        padding: 4rem 0;
+    }
+
+    .rodape__lista {
+        border-left: 1px solid var(--cor-fundo);
+    }
 }
