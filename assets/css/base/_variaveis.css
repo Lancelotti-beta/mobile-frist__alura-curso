@@ -1,10 +1,14 @@
 :root {
     --cor-fundo: #ebecee;
+
     --branco-principal: #ffffff;
+    --preto: #000000;
+
     --laranja-titulo: #eb9b00;
+    --vermelho: #D94937;
     --cinza-principal: #858585;
     --cinza-secundario: #474646;
-    --azul: #002f52;
+    --azul-principal: #002f52;
     --azul-secundario: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
     
     --poppins: 'Poppins', sans-serif;

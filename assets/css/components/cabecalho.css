@@ -46,7 +46,7 @@
 }
 
 .cabecalho__menu {
-    background-image: url('../../icon-svg/Menu.svg');
+    background-image: url('../../grafic/icon-svg/Menu.svg');
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -59,7 +59,7 @@
 }
 
 .cabecalho__checkbox:checked~.menu--alternativo>.cabecalho__menu {
-    background-image: url('../../icon-svg/menu_hamburguer_withe.svg');
+    background-image: url('../../grafic/icon-svg/menu_hamburguer_withe.svg');
 }
 
 .cabecalho__checkbox:checked~.menu--alternativo {

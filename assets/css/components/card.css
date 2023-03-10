@@ -20,7 +20,7 @@
 .descricao--estrela::before {
     content: '';
 
-    background-image: url(../../img/Estrelinhas.png);
+    background-image: url(../../grafic/img/Estrelinhas.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
