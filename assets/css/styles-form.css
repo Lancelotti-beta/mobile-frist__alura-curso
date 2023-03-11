@@ -1,0 +1,15 @@
+@import url("./base/_reset.css");
+@import url("./base/_variaveis.css");
+
+@import url("./components/page-formulario/header.css");
+@import url("./components/page-formulario/banner.css");
+@import url("./components/page-formulario/formulario.css");
+@import url("./components/page-formulario/rodape.css");
+@import url("./components/page-formulario/cadastro.css");
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-weight: var(--peso-baixo);
+}
