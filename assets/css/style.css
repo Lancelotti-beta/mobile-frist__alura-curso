@@ -1,0 +1,24 @@
+@import url(./base/_reset.css);
+@import url(./base/_variaveis.css);
+/* Sessões da Pagina - Import's */
+@import url(./components/page-principal/cabecalho.css);
+@import url(./components/page-principal/banner.css);
+@import url(./components/page-principal/carrossel.css);
+@import url(./components/page-principal/card.css);
+@import url(./components/page-principal/topico.css);
+@import url(./components/page-principal/contato.css);
+@import url(./components/page-principal/rodape.css);
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-weight: var(--peso-baixo);
+}
+
+.container__flex {
+    display: flex;
+    align-items: center;
+}
+
+
